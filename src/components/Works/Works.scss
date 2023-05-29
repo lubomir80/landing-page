@@ -1,0 +1,17 @@
+.works{
+   padding: var(--padding-section);
+
+   & &__title{
+      margin-bottom: var(--margin-md);
+   }
+
+   & &__projects{
+      margin-bottom: var(--margin-md);
+   }
+
+   & &__projects__btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}

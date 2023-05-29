@@ -1,0 +1,35 @@
+.white .logo{
+   color: var(--clr-white);
+}
+
+.logo{
+   z-index: 101;
+   display: flex;
+   align-items: center;
+   font-style: normal;
+   font-size: 27.0287px;
+   line-height: 30px;
+   text-decoration: none;
+   color: var(--clr-black-1);
+
+   & span{
+      margin-left: 13px;
+      font-weight: 500;
+   }
+   @media screen and (max-width:1024px) {
+      font-size: 24.0287px;
+   }
+
+   @media screen and (max-width:768px) {
+      font-size: 21.5426px;
+      line-height: 24px;
+
+      & img{
+         height: 41px;
+         width: 26.3px; 
+      }
+   }
+}
+
+
+

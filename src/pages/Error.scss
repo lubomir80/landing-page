@@ -1,0 +1,44 @@
+.error-page{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: var(--margin-lg);
+
+   & &__container{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 60px;
+   }
+
+   & &__title{
+      font-family: 'Graphik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 174.5%;
+
+      @media screen and (max-width:768px) {
+         font-size: 54px;
+         line-height: 120%;
+      }
+   }
+
+   & &__text{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 174.5%;
+      text-transform: uppercase;
+   }
+
+   & &__button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 125px;
+      height: 125px;
+   }
+   
+}

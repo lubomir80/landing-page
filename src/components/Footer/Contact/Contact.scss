@@ -1,0 +1,43 @@
+
+.contact{
+   flex: 1;
+   gap: var(--margin-md);
+   height: 366px;
+   justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+
+   & &__header{
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px;
+      color: var(--clr-grey);
+   }
+
+   & a,address{
+      color: var(--clr-white);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%
+   }
+   
+   & &__container{
+      padding: 1px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   
+   & &__item{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 45%;
+      min-width: 190px;
+      padding: 0 30px 30px 0;
+   }
+
+
+
+}

@@ -1,0 +1,74 @@
+.performances{
+   position: relative;
+   border-radius: var(--br-md);
+   background-color: var(--main-bg-color);
+   padding:var(--padding-section-unique);
+
+   
+
+// ............................ORANGE CIRCLE.................................
+
+   & &__circle-img{
+      position: absolute;
+      top: 0;
+      left: 10%;
+      transform: translateY(-50%);
+
+      @media screen and (max-width:768px) {
+         width: 113px;
+         height: 112px;
+         left: -5%;
+         transform: translateY(-50%);
+      }
+   }
+
+   & &__circles-img{
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(-20%);
+
+      @media screen and (max-width:1024px) {
+         width: 550px;
+         height: 600px;
+         right: -10%;
+      }
+
+      @media screen and (max-width:768px) {
+         width: 350px;
+         height: 400px;
+         right: -10%;
+      }
+      @media screen and (max-width:500px) {
+         width: 300px;
+         height: 350px;
+         right: -10%;
+      }
+   }
+
+   
+
+
+   & &__title{
+      position:relative;
+      z-index: 2;
+      margin-bottom: var(--margin-md);
+
+      & .title{
+         line-height: 106px;
+         @media screen and (max-width:768px) {
+            line-height: 53px;
+         }
+      }
+
+      & p{
+         padding: 10px 22px 10px 0;
+         max-width: 570px;
+      }
+   }
+
+   & &__carousel{
+      margin-bottom: var(--margin-lg);;
+   }
+
+}

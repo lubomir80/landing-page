@@ -1,0 +1,21 @@
+.information{
+   display: flex;
+   gap: 30px;
+   flex-direction: column;
+   padding: var(--padding-section-information);
+
+   @media screen and (max-width:500px) {
+      gap: 15px;
+   }
+
+   & &__title{
+      max-width: 650px;
+   }
+   
+   & &__text-container{
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      max-width: 560px;
+   }
+}

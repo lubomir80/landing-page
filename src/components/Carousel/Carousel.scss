@@ -1,0 +1,54 @@
+.carousel{
+   cursor: pointer;
+   padding: 10px;
+   overflow: hidden;
+
+&__container{
+   display: flex;
+   gap: 14px;
+}
+
+
+&__item{
+   flex: 1 0 30%;
+   min-width: 300px;
+   padding: 46px 37.5px;
+   border-radius: var(--br-sm);
+   background: var(--clr-white);
+   opacity: 0.9;
+   
+   @media only screen and (max-width: 1024px){
+      padding: 45px 36px;
+   }   
+
+   @media only screen and (max-width: 768px) {
+      padding: 40px 33px;
+   }
+   
+   @media only screen and (max-width: 500px) {
+      padding: 33px;
+   }
+
+   img{
+      height: 75px;
+      width: 110px;
+      margin-bottom: 28px;
+      z-index: 2;
+   }
+
+   h4{
+      font-weight: 500;
+      font-size: 27.2px;
+      line-height: 43px;
+      margin-bottom: 8px;
+      white-space: nowrap;
+   }
+   p{
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      max-width: 288.19px;
+   }
+}
+}

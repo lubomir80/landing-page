@@ -1,0 +1,39 @@
+.navicons{
+   display: flex;
+   align-items: center;
+   z-index: 10;
+
+   & &__list{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+   }
+   
+
+   & &__item{
+      display: flex;
+      align-items: center;
+      
+      & a{
+         display: flex;
+         align-items: center;
+         color: var(--clr-white);
+         transition: var(--transition);
+      }
+      
+      &:hover a{
+         color: var(--clr-orange-dark);
+      }
+   }
+
+
+   & &__item.orange{
+      &:hover a{
+         color: var(--clr-orange-dark);
+      }
+      
+      & a{
+         color: var(--clr-orange);
+      }
+   }
+}

@@ -1,0 +1,13 @@
+.copyright{
+   padding: 30px 22px 30px;
+   text-align: center;
+
+   & a{
+      color: var(--clr-orange);
+      transition: var(--transition);
+
+      &:hover{
+         color: var(--clr-orange-dark);
+      }
+   }
+}

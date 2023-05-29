@@ -1,0 +1,12 @@
+.background-main{
+   overflow: hidden;
+   border-bottom-left-radius: var(--br-md);
+   border-bottom-right-radius: var(--br-md);
+   aspect-ratio: 1.92/1;
+
+   & .background__image{
+      &::before{
+         background-color: rgba(0,0,0,.3);
+      }
+   }
+}

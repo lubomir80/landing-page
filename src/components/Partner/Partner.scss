@@ -1,0 +1,61 @@
+.partner{
+   position: relative;
+   padding: var(--padding-section);
+
+   & &__background-img{
+      position: absolute;
+      top: -10%;
+      width: 65%;
+      right: 0;     
+      z-index: 1;
+   }
+
+   & &__titel{
+      position: relative;
+      z-index: 2;
+      margin-bottom: var(--margin-md);
+   }
+
+   & &__form{
+      position: relative;
+      z-index: 2;
+      margin-bottom: var(--margin-lg);
+   }
+
+   & &__logos{
+      z-index: 2;
+      position: relative;
+      display: flex;
+      gap: 20%;
+      align-items: center;
+
+      animation-name: slide-right;
+		animation-duration: 18s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+
+      & img{
+         aspect-ratio: 4/1;
+         width: 10%;
+         object-fit: contain;
+
+         @media screen and (max-width:500px){
+            width: 100px;
+         }
+      }
+   }
+}
+
+@keyframes slide-right {
+			
+   0% {
+      transform:translateX(0);
+   }
+   50% {
+      transform:translateX(-100%);
+   }
+   100% {
+      transform:translateX(0%);
+   }
+}

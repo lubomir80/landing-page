@@ -1,0 +1,13 @@
+.title__component{
+   max-width: 780px;
+
+   @media only screen and (max-width: 1440px) {
+      max-width: 600px;
+   }
+   
+   span{
+   background: -webkit-linear-gradient(267.4deg, #FF352B 6.37%, #FC651E 92.22%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   }
+}

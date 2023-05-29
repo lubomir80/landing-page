@@ -1,0 +1,215 @@
+@import "./Fonts.scss";
+
+:root {
+   --main-bg-color: #e6e6e6;
+   --footer-bg-color:#191919;
+   --clr-white:#FFFFFF;
+   --clr-grey:#A1A1A1;
+   --clr-black-1:#000000;
+   --clr-black-2:#191919;
+   --clr-orange:#fe5616;
+   --clr-orange-dark: #ca410a;
+   
+// ........Fonts................
+   --font-h1: 110px;
+   --font-h2: 96px;
+   --font-h3: 48px;
+   --font-h4: 36px;
+   --font-h5: 24px;
+// ........Line-height................   
+   --lh-xlg: 140px;
+   --lh-lg: 106px;
+   --lh-md: 70px;
+   --lh-sm: 50px;
+// ........Border-rad................
+   --br-md: 30px;
+   --br-sm: 20px;
+// ........margin................
+   --margin-lg: 150px;
+   --margin-md: 75px;
+// ........padding................
+   --padding-navbar: 25px 50px;
+   --padding-section: 100px 50px 150px; 
+   --padding-section-hero: 150px 50px 0; 
+   --padding-section-unique: 100px 0 200px 50px;
+   --padding-section-information: 80px 230px 120px;
+   --padding-section-footer: 150px; 
+
+
+// ........transition................
+   --transition:all .3s linear;
+
+
+   @media screen and (max-width:1440px) {
+      --font-h1: 96px;
+      --font-h2: 60px;
+   // ........Line-height................
+      --lh-xlg: 106px;
+      --lh-lg: 70px;
+   }
+
+   @media screen and (max-width:1024px) {
+      --font-h2: 54px;
+   // ........Line-height................
+      --lh-xlg: 100px;
+   // ........margin................   
+      --margin-lg: 75px;
+      --margin-md: 50px;
+   // .........padding..................
+   --padding-section-footer: 90px;
+   --padding-section-information: 80px 150px 120px;
+   
+   }
+   @media screen and (max-width:768px) {
+      --font-h1: 62px;
+      --font-h5: 20px;
+   // ........Line-height................
+      --lh-xlg: 50px;
+      --lh-lg: 53px;
+      // ........margin................   
+      --margin-lg: 50px;
+      --margin-md: 35px;
+      // ........padding...............
+      --padding-navbar: 25px 30px;
+      --padding-section: 60px 30px 90px; 
+      --padding-section-hero: 90px 30px 0px;
+      --padding-section-unique: 60px 0 90px 30px;
+      --padding-section-information: 60px 60px 90px;
+      --padding-section-footer: 50px; 
+   }
+   @media screen and (max-width:500px) {
+      --font-h1: 52px;
+      --font-h2: 48px;
+   // ........Line-height................
+      --lh-xlg: 50px;
+   // ........margin................
+      --margin-lg: 25px;
+      --margin-md: 25px;
+   // ........padding...............
+      --padding-navbar: 11px 22px;
+      --padding-section: 30px 22px 90px; 
+      --padding-section-hero: 60px 22px 0px;
+      --padding-section-unique: 30px 0 60px 22px;
+      --padding-section-information: 30px 22px 45px;
+      --padding-section-footer: 30px 22px 90px; 
+   }
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+html {
+   scroll-behavior: smooth;
+   scroll-padding-top: 101px;
+   box-sizing: border-box;
+
+   
+
+   @media screen and (max-width:768px) {
+      scroll-padding-top: 91px;
+   }
+   @media screen and (max-width:500px) {
+      scroll-padding-top: 63px;
+   }
+}
+
+
+body {
+   font-family: 'Graphik', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+   
+}
+
+body.lock{
+   overflow: hidden;
+}
+
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+   color: var(--clr-black-1);
+}
+
+h1,h2,h3,h4{
+   font-family: 'Graphik';
+   font-style: normal;
+   font-weight: 500;
+}
+
+h1,h2,h3,h4,h5{
+  user-select: none;
+}
+
+div,span,a,li,ul,p,address{
+   &::selection{
+      color: #FFFFFF;
+      background-color: #fe5616;
+   }
+}
+
+h1{
+   font-size: var(--font-h1);
+   line-height: var(--lh-xlg);
+   white-space: nowrap;
+}
+
+h2{
+   font-size: var(--font-h2);
+   line-height: var(--lh-lg);
+}
+
+h3{
+   font-size: var(--font-h3);
+   line-height: var(--lh-md);
+   color: var(--clr-black-2);
+}
+
+h4{
+   font-size: var(--font-h4);  
+   line-height: var(--lh-sm);
+   color: var(--clr-black-2);
+}
+
+h5{
+   font-size: var(--font-h5);   
+}
+
+.button{
+   cursor: pointer;
+   color: var(--clr-white);
+   border: none;
+   padding: 10px 35px;
+   border-radius: 100px;
+   background: linear-gradient(259.84deg, rgba(255, 53, 43, 0.2) 12.01%, rgba(255, 109, 40, 0) 86.22%), var(--clr-orange);
+   transition: var(--transition);
+
+   &:hover{
+      background: linear-gradient(259.84deg, rgba(255, 53, 43, 0.1) 12.01%, rgba(255, 109, 40, 0) 100%), (var(--clr-orange-dark));
+   }
+}
+
+.button-circle{
+   width: 125px;
+   height: 125px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 28px;
+   text-align: center;
+   padding: 0;
+   
+}
+
